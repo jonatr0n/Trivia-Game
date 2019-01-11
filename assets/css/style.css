@@ -16,11 +16,13 @@ img {
 
 #answerblock {
     text-align: center;
+    font-family: 'Staatliches', cursive;
 }
 
 #questionblock {
     text-align: center;
     font-weight: bold;
+    font-family: 'Staatliches', cursive;
 }
 
 #reset {
@@ -28,17 +30,22 @@ img {
 }
 
 body {
-    /* background-image: url("../images/foodbg.jpg"); */
+    background-image: url("../images/pikachu_00378636.jpg");
     background-size: cover;
     font-family: 'Karla', sans-serif;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    
 }
 
 h1 {
     text-align: center;
-    color: rgb(17, 14, 230);
+    color: rgb(172, 27, 27);
     font-weight: bolder;
     padding: 20px;
     font-size: 45px;
+    font-family: 'Staatliches', cursive;
 }
 
 p {
@@ -56,8 +63,8 @@ h4 {
 
 .wrapper {
     margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid #403fd3;
+    background-color: rgba(173, 165, 165, 0.884);
+    border: 2px solid #5b5b5f;
     height: 500px;
     width: 60%;
     text-align: center;
@@ -67,4 +74,13 @@ h4 {
     position: relative;
     bottom: -150px;
     /* background-color: red; */
+    font-family: 'Staatliches', cursive;
+}
+
+html {
+    font-family: 'Staatliches', cursive;
+}
+
+#timeleft {
+    font-family: 'Staatliches', cursive;
 }

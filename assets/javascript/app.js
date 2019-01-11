@@ -4,49 +4,41 @@ $(document).ready(function () {
             question: "What Pokemon does Pikachu evolve into?",
             choice: ["Raichu", "Jolteon", "Electvire", "Meowth"],
             answer: 0,
-            // photo: "assets/images/pupusas.jpg"
         },
         {
             question: "What's the most effective Poke Ball in the game?",
             choice: ["Great Ball", "Master Ball", "Ultra Ball", "Timer Ball"],
             answer: 1,
-            // photo: "assets/images/mtdew.gif"
         },
         {
             question: "How many Gym Badges must a trainer collect before challenging the Elite Four?",
             choice: ["6", "7", "8", "9"],
             answer: 2,
-            // photo: "assets/images/coffee.gif"
         },
         {
             question: "What's the device trainers use to keep a record of their Pokemon encounters?",
             choice: ["Pokecounter", "Pokefinder", "Pokedex", "Pokephone"],
             answer: 2,
-            // photo: "assets/images/harvey.jpg"
         },
         {
             question: "If you need to buy supplies in the Pokemon world, where do you go?",
             choice: ["Pokemon Center", "Gym", "Pokemart", "Poke Dep"],
             answer: 2,
-            // photo: "assets/images/dozen.jpg"
         },
         {
             question: "If you need to revive your fainted Pokemon to full health, where do you go?",
             choice: ["Mount Fuji", "Pokemon Center", "Pokemon Mansion", "Gym"],
             answer: 1,
-            // photo: "assets/images/herring.jpg"
         },
         {
             question: "What are the three types of starter Pokemon?",
             choice: ["Psychic, Fighting and Ghost", "Grass, Fire and Water", "Electric, Ground and Poison", "Dragon, Flying and Normal"],
             answer: 1,
-            // photo: "assets/images/lemon.gif"
         },
         {
             question: "What type of attacks are Normal type Pokemon immune to?",
             choice: ["Fighting", "Dark", "Ghost", "Fire"],
             answer: 2,
-            // photo: "assets/images/guava.gif"
         }];
 
     var correctCount = 0;
@@ -61,7 +53,6 @@ $(document).ready(function () {
     var index;
     var newArray = [];
     var holder = [];
-
 
     // START GAME
     $("#reset").hide();
@@ -104,7 +95,7 @@ $(document).ready(function () {
     }
 
 
-// QUESTION FUNCTIONS
+    // QUESTION FUNCTIONS
     //randomly pick question in array if not already shown
     //display question and loop though and display possible answers
     function displayQuestion() {
@@ -124,8 +115,6 @@ $(document).ready(function () {
             $("#answerblock").append(userChoice);
             //		}
         }
-
-
 
         //click function to select answer and outcomes
         $(".answerchoice").on("click", function () {
@@ -149,7 +138,6 @@ $(document).ready(function () {
             }
         })
     }
-
 
     function hidepicture() {
         // $("#answerblock").append("<img src=" + pick.photo + ">");
